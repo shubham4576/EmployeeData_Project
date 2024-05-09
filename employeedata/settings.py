@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-m6a@0e%2bwn1)1!abmfuwq^et2uelt5v3n7dfqpvopd1r5m(lb
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh', '127.0.0.1', 'localhost']
 
 # http://103.170.149.84:82/api/v2/WebAPI/GetDeviceLogs?APIKey=562815042406&FromDate=2024-01-09&ToDate=2024-05-09
 
@@ -122,7 +122,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
+import os
+
 STATIC_URL = "static/"
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
