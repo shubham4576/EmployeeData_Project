@@ -19,7 +19,7 @@ def device_logs(request):
         except ValueError:
             return HttpResponseBadRequest("Invalid fromDate format. Please use YYYY-MM-DD.")
     else:
-        from_date = None
+        from_date = datetime.today().date()
 
     if to_date:
         try:
@@ -27,7 +27,7 @@ def device_logs(request):
         except ValueError:
             return HttpResponseBadRequest("Invalid toDate format. Please use YYYY-MM-DD.")
     else:
-        to_date = None
+        to_date = datetime.today().date()
 
     # Fetch data from the API using settings.API_URL and settings.API_KEY
     api_url = settings.API_URL
