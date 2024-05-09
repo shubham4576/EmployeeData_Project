@@ -1,0 +1,852 @@
+{
+	"info": {
+		"_postman_id": "9dfbd728-05ec-4abf-88b0-39ce470d400b",
+		"name": "SmartOffice API",
+		"description": "SmartOffice API document to use the API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "e) Delete Users from Biometric Device",
+			"protocolProfileBehavior": {
+				"strictSSL": false,
+				"followRedirects": false,
+				"disableUrlEncoding": false
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "45.118.183.175:86/api/v2/WebAPI/DeleteUser?APIKey=521714042205&EmployeeCode=1134&SerialNumbers=C269204697241936",
+					"host": [
+						"45",
+						"118",
+						"183",
+						"175"
+					],
+					"port": "86",
+					"path": [
+						"api",
+						"v2",
+						"WebAPI",
+						"DeleteUser"
+					],
+					"query": [
+						{
+							"key": "APIKey",
+							"value": "521714042205"
+						},
+						{
+							"key": "EmployeeCode",
+							"value": "1134"
+						},
+						{
+							"key": "SerialNumbers",
+							"value": "C269204697241936"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "d) Upload Users to Biometric Device",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "45.118.183.175:86/api/v2/WebAPI/UploadUser?APIKey=521714042205&EmployeeCode=444557&EmployeeName=jain ajay&CardNumber&SerialNumbers=C2688C21CB2D172711&VerifyMode=1",
+					"host": [
+						"45",
+						"118",
+						"183",
+						"175"
+					],
+					"port": "86",
+					"path": [
+						"",
+						"api",
+						"v2",
+						"WebAPI",
+						"UploadUser"
+					],
+					"query": [
+						{
+							"key": "APIKey",
+							"value": "521714042205"
+						},
+						{
+							"key": "EmployeeCode",
+							"value": "444557"
+						},
+						{
+							"key": "EmployeeName",
+							"value": "jain ajay"
+						},
+						{
+							"key": "CardNumber",
+							"value": null
+						},
+						{
+							"key": "SerialNumbers",
+							"value": "C2688C21CB2D172711"
+						},
+						{
+							"key": "VerifyMode",
+							"value": "1"
+						},
+						{
+							"key": "ToDate",
+							"value": "20201012",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetDeviceLogs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "45.118.183.175:86/api/v2/WebAPI/GetDeviceLogs?APIKey=521714042205&FromDate=2022-04-01&ToDate=2022-04-04&SerialNumber=",
+					"host": [
+						"45",
+						"118",
+						"183",
+						"175"
+					],
+					"port": "86",
+					"path": [
+						"",
+						"api",
+						"v2",
+						"WebAPI",
+						"GetDeviceLogs"
+					],
+					"query": [
+						{
+							"key": "APIKey",
+							"value": "521714042205"
+						},
+						{
+							"key": "FromDate",
+							"value": "2022-04-01"
+						},
+						{
+							"key": "ToDate",
+							"value": "2022-04-04"
+						},
+						{
+							"key": "SerialNumber",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetDeviceCommands",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "45.118.183.175:86/api/v2/WebAPI/GetDeviceCommands?APIKey=521714042205&FromDate=2022-04-01&ToDate=2022-04-04&SerialNumbers=",
+					"host": [
+						"45",
+						"118",
+						"183",
+						"175"
+					],
+					"port": "86",
+					"path": [
+						"",
+						"api",
+						"v2",
+						"WebAPI",
+						"GetDeviceCommands"
+					],
+					"query": [
+						{
+							"key": "APIKey",
+							"value": "521714042205"
+						},
+						{
+							"key": "FromDate",
+							"value": "2022-04-01"
+						},
+						{
+							"key": "ToDate",
+							"value": "2022-04-04"
+						},
+						{
+							"key": "SerialNumbers",
+							"value": "",
+							"description": "this is optional parameters if you want to get the records of the specific devices then pass the comma separated serial number for example C2688C21CB2D172711,ADZV213760072"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "g) Set User Expiration",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "45.118.183.175:86/api/v2/WebAPI/SetUserExpiration?APIKey=521714042205&SerialNumber=C269204697241936&EmployeeCode=17&ExpirationDate=2023-01-04",
+					"host": [
+						"45",
+						"118",
+						"183",
+						"175"
+					],
+					"port": "86",
+					"path": [
+						"api",
+						"v2",
+						"WebAPI",
+						"SetUserExpiration"
+					],
+					"query": [
+						{
+							"key": "APIKey",
+							"value": "521714042205"
+						},
+						{
+							"key": "SerialNumber",
+							"value": "C269204697241936"
+						},
+						{
+							"key": "EmployeeCode",
+							"value": "17"
+						},
+						{
+							"key": "ExpirationDate",
+							"value": "2023-01-04"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "h) Fetch Biometric Commands",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "45.118.183.175:86//api/v2/WebAPI/GetDeviceCommands?APIKey=521714042205&FromDate=2021-07-01&ToDate=2021-07-15",
+					"host": [
+						"45",
+						"118",
+						"183",
+						"175"
+					],
+					"port": "86",
+					"path": [
+						"",
+						"",
+						"api",
+						"v2",
+						"WebAPI",
+						"GetDeviceCommands"
+					],
+					"query": [
+						{
+							"key": "APIKey",
+							"value": "521714042205"
+						},
+						{
+							"key": "FromDate",
+							"value": "2021-07-01"
+						},
+						{
+							"key": "ToDate",
+							"value": "2021-07-15"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "i) Photo Registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   APIKey:'343409102104',\r\n   SerialNumber:'114789521A4BC',\r\n   EmployeeName:'Ajay Sexena',\r\n   EmployeeCode='11447',\r\n   Base64String:'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'\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "45.118.183.175:86//api/v2/WebAPI/PhotoUploadInBiometric",
+					"host": [
+						"45",
+						"118",
+						"183",
+						"175"
+					],
+					"port": "86",
+					"path": [
+						"",
+						"api",
+						"v2",
+						"WebAPI",
+						"PhotoUploadInBiometric"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "j) BlockUserinBiometric",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "45.118.183.175:86/api/V2/WebAPI/BlockUserinBiometric?APIKey=521714042205&EmployeeCode=17&SerialNumber=C269204697241936&BlockUser=0",
+					"host": [
+						"45",
+						"118",
+						"183",
+						"175"
+					],
+					"port": "86",
+					"path": [
+						"api",
+						"V2",
+						"WebAPI",
+						"BlockUserinBiometric"
+					],
+					"query": [
+						{
+							"key": "APIKey",
+							"value": "521714042205"
+						},
+						{
+							"key": "EmployeeCode",
+							"value": "17"
+						},
+						{
+							"key": "SerialNumber",
+							"value": "C269204697241936"
+						},
+						{
+							"key": "BlockUser",
+							"value": "0",
+							"description": "BlockUser (int): 0 – to block the user, 1 – to unblock the user."
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "a) Add Biometric Device",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "45.118.183.175:86/api/v2/WebAPI/AddBiometric?APIKey=521714042205&DeviceName=Bangalore-DC-111&SerialNumber=114789521A4BC1",
+					"host": [
+						"45",
+						"118",
+						"183",
+						"175"
+					],
+					"port": "86",
+					"path": [
+						"",
+						"api",
+						"v2",
+						"WebAPI",
+						"AddBiometric"
+					],
+					"query": [
+						{
+							"key": "APIKey",
+							"value": "521714042205"
+						},
+						{
+							"key": "DeviceName",
+							"value": "Bangalore-DC-111"
+						},
+						{
+							"key": "SerialNumber",
+							"value": "114789521A4BC1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "b) Delete Biometric Device",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "45.118.183.175:86/api/v2/WebAPI/DeleteBiometric?APIKey=521714042205&SerialNumber=114789521A4BC11",
+					"host": [
+						"45",
+						"118",
+						"183",
+						"175"
+					],
+					"port": "86",
+					"path": [
+						"",
+						"api",
+						"v2",
+						"WebAPI",
+						"DeleteBiometric"
+					],
+					"query": [
+						{
+							"key": "APIKey",
+							"value": "521714042205"
+						},
+						{
+							"key": "SerialNumber",
+							"value": "114789521A4BC11"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "c) Fetch Biometric Logs Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "45.118.183.175:86/api/v2/WebAPI/GetDeviceLogs?APIKey=521714042205&FromDate=2021-08-01&ToDate=2021-09-01",
+					"host": [
+						"45",
+						"118",
+						"183",
+						"175"
+					],
+					"port": "86",
+					"path": [
+						"",
+						"api",
+						"v2",
+						"WebAPI",
+						"GetDeviceLogs"
+					],
+					"query": [
+						{
+							"key": "APIKey",
+							"value": "521714042205"
+						},
+						{
+							"key": "FromDate",
+							"value": "2021-08-01"
+						},
+						{
+							"key": "ToDate",
+							"value": "2021-09-01"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "f) Fetch Live Users from Biometric",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "45.118.183.175:86/api/v2/WebAPI/FetchLiveUsersFromBiometric?APIKey=521714042205&SerialNumber=C269204697241936",
+					"host": [
+						"45",
+						"118",
+						"183",
+						"175"
+					],
+					"port": "86",
+					"path": [
+						"api",
+						"v2",
+						"WebAPI",
+						"FetchLiveUsersFromBiometric"
+					],
+					"query": [
+						{
+							"key": "APIKey",
+							"value": "521714042205"
+						},
+						{
+							"key": "SerialNumber",
+							"value": "C269204697241936"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "k) Add/Update Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"StaffCode\":\"12121\",\r\n \"StaffName\":\"abc\",\r\n \"Gender\":\"Male\",\r\n \"Status\":\"Working\",\r\n \"CompanySName\":\"Default\",\r\n \"DepartmentSName\":\"Default\",\r\n \"Location\":\"Default\",\r\n \"Designation\":\"Default\",\r\n \"Grade\":\"Default\",\r\n \"Team\":\"Default\",\r\n \"DOJ\":\"2021-04-28\",\r\n \"DOC\":\"2021-09-15\",\r\n \"DOB\":\"1987-06-01\",\r\n \"DOR\":\"3000-01-01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "45.118.183.175:86/api/v2/WebAPI/AddEmployee?APIKey=521714042205",
+					"host": [
+						"45",
+						"118",
+						"183",
+						"175"
+					],
+					"port": "86",
+					"path": [
+						"",
+						"api",
+						"v2",
+						"WebAPI",
+						"AddEmployee"
+					],
+					"query": [
+						{
+							"key": "APIKey",
+							"value": "521714042205"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "l) Delete Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "45.118.183.175:86/api/v2/WebAPI/DeleteEmployee?APIKey=521714042205&EmployeeCode=12121",
+					"host": [
+						"45",
+						"118",
+						"183",
+						"175"
+					],
+					"port": "86",
+					"path": [
+						"",
+						"api",
+						"v2",
+						"WebAPI",
+						"DeleteEmployee"
+					],
+					"query": [
+						{
+							"key": "APIKey",
+							"value": "521714042205"
+						},
+						{
+							"key": "EmployeeCode",
+							"value": "12121"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddCompany",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"BranchAddress\":\"648, 2nd Floor, Sri Janardhan Towers 5th Main, 1st Cross Rd, RBI Layout, JP Nagar 7th Phase, Naagarabhaavi, Bengaluru, Karnataka 560078\",\r\n    \"BranchFullName\":\"SmartOffice payroll & Biometrics Solutions pvt ltd\",\r\n    \"BranchShortName\":\"SmartOffice payroll & Biometrics Solutions pvt ltd\",\r\n    \"BrancheMail\":\"SupportIndia@Smartofficepayroll.com\",\r\n    \"BranchWebsite\":\"www.smartofficepayroll.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "45.118.183.175:86/api/v2/WebAPI/AddCompany?APIKey=521714042205",
+					"host": [
+						"45",
+						"118",
+						"183",
+						"175"
+					],
+					"port": "86",
+					"path": [
+						"",
+						"api",
+						"v2",
+						"WebAPI",
+						"AddCompany"
+					],
+					"query": [
+						{
+							"key": "APIKey",
+							"value": "521714042205"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddDepartment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n    \"DepartmentFName\":\"Software Developement\",\r\n    \"DepartmentSName\":\"Software Developement\",\r\n    \"DepartmenteMail\":\"SupportIndia@Smartofficepayroll.com\",\r\n    \"Description\":\"Software Developement PAN india\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "45.118.183.175:86/api/v2/WebAPI/AddDepartment?APIKey=521714042205",
+					"host": [
+						"45",
+						"118",
+						"183",
+						"175"
+					],
+					"port": "86",
+					"path": [
+						"",
+						"api",
+						"v2",
+						"WebAPI",
+						"AddDepartment"
+					],
+					"query": [
+						{
+							"key": "APIKey",
+							"value": "521714042205"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddLocation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n    \"LocationName\":\"Bangalore1\",\r\n    \"LocationCode\":\"Bangalore1\",\r\n    \"eMail\":\"SupportIndia@Smartofficepayroll.com\",\r\n    \"LocationLattitude\":\"12.9337623\",\r\n    \"LocationLongitude\":\"77.5828713\",\r\n    \"Radius\":\"500\",\r\n    \"LocationFullAddress\":\"482,JPNagar - 560078\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "45.118.183.175:86/api/v2/WebAPI/AddLocation?APIKey=521714042205",
+					"host": [
+						"45",
+						"118",
+						"183",
+						"175"
+					],
+					"port": "86",
+					"path": [
+						"",
+						"api",
+						"v2",
+						"WebAPI",
+						"AddLocation"
+					],
+					"query": [
+						{
+							"key": "APIKey",
+							"value": "521714042205"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddGrade",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n    \"GradeCode\":\"Grade A\",\r\n    \"GradeName\":\"Grade A\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "45.118.183.175:86/api/v2/WebAPI/AddGrade?APIKey=521714042205",
+					"host": [
+						"45",
+						"118",
+						"183",
+						"175"
+					],
+					"port": "86",
+					"path": [
+						"",
+						"api",
+						"v2",
+						"WebAPI",
+						"AddGrade"
+					],
+					"query": [
+						{
+							"key": "APIKey",
+							"value": "521714042205"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddTeam",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n    \"TeamCode\":\"Developement Team\",\r\n    \"TeamName\":\"Developement Team\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "45.118.183.175:86/api/v2/WebAPI/AddTeam?APIKey=521714042205",
+					"host": [
+						"45",
+						"118",
+						"183",
+						"175"
+					],
+					"port": "86",
+					"path": [
+						"",
+						"api",
+						"v2",
+						"WebAPI",
+						"AddTeam"
+					],
+					"query": [
+						{
+							"key": "APIKey",
+							"value": "521714042205"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddDesignation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n    \"DesignationsName\":\"Senior Software Developer\",\r\n    \"DesignationCode\":\"Senior Software Developer\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "45.118.183.175:86/api/v2/WebAPI/AddDesignation?APIKey=521714042205",
+					"host": [
+						"45",
+						"118",
+						"183",
+						"175"
+					],
+					"port": "86",
+					"path": [
+						"",
+						"api",
+						"v2",
+						"WebAPI",
+						"AddDesignation"
+					],
+					"query": [
+						{
+							"key": "APIKey",
+							"value": "521714042205"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetMappedDevicesForUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "45.118.183.175:86/api/v2/WebAPI/GetMappedDevicesForUser?APIKey=521714042205&EmployeeCodeInDevice=1",
+					"host": [
+						"45",
+						"118",
+						"183",
+						"175"
+					],
+					"port": "86",
+					"path": [
+						"",
+						"api",
+						"v2",
+						"WebAPI",
+						"GetMappedDevicesForUser"
+					],
+					"query": [
+						{
+							"key": "APIKey",
+							"value": "521714042205"
+						},
+						{
+							"key": "EmployeeCodeInDevice",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
